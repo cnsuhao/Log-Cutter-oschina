@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="4.5.2" transformSequenceNumber="1">
+  <directoryPresets config="X:/MyWork/Java/LogCutter" />
+  <application name="LogCutter" distributionSourceDir="D:/MyWork/Java/LogCutter">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="LogCutter" type="1" iconSet="true" iconFile="D:/MyWork/Java/LogCutter/doc/LogCutter.ico" executableDir="./bin" redirectStderr="true" stderrFile="../logs/error.log" stderrMode="overwrite" redirectStdout="true" stdoutFile="../logs/output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="3" changeWorkingDirectory="true" workingDirectory=".." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="schedule to DELETE, CUT and ARCHIVE text log files" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false" amd64="true">
+    <messageSet />
+    <versionInfo include="true" fileVersion="2.0.2" fileDescription="LogCutter 2.0.2" legalCopyright="JessMA Open Source all rights reserved" internalName="LogCutter" productName="" companyName="SST" productVersion="2.0.2" />
+  </executable>
+  <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
+    <text>
+      <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+      <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+    </text>
+  </splashScreen>
+  <java mainClass="org.jessma.logcutter.main.LogCutter" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.6" maxVersion="" allowBetaVM="false" jdkOnly="false">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <classPath>
+      <scanDirectory location="./lib" failOnError="false" />
+      <directory location="./classes" failOnError="false" />
+    </classPath>
+    <nativeLibraryDirectories />
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>
+
