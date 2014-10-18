@@ -13,8 +13,8 @@
 --------------------------------------------------
 1) 程序配置文件: conf/config.xml (默认)
 	（示例参考：conf/config-template.xml）
-2) 日志配置文件: conf/log4j.properties (默认)
-	（示例请参考：conf/log4j.properties）
+2) 日志配置文件: conf/log4j2.xml (默认)
+	（示例请参考：conf/log4j2.xml）
 --------------------------------------------------
 
 三、安装部署
@@ -51,5 +51,7 @@
 	C) 单次运行: $ run.sh -1 [ -f config-file ] [ -d ]
 
 	*** 注 ***
-		@ 可以把 run.sh 启动命令加入 /etc/rc.d/rc.local 中，从而设置为开机时自动运行
+		@ 可以把 run.sh 启动命令加入 /etc/rc.d/rc.local 中，设置为开机时自动运行
+		@ 可以把 run.sh -1 放入 CronTab 中定期执行，并且不用常驻内存，如：
+			## 30 2 * * 2,4,6 root /usr/local/LogCutter/bin/run.sh -1 > /dev/null
 --------------------------------------------------
