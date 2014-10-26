@@ -89,7 +89,7 @@ public class CutFileRunner extends FileRunner
 
 				if(FILE_LENGTH >= cfp.getThreshold() * BYTE_UNIT_FACTOR)
 				{
-					logger.info(String.format("cutting '%s' ...", file.getAbsolutePath()));
+					logger.info("cutting '{}'", file.getAbsolutePath());
 
 					raf.seek(FILE_LENGTH - cfp.getReserve() * BYTE_UNIT_FACTOR);
 
@@ -102,11 +102,11 @@ public class CutFileRunner extends FileRunner
 				}
 			}
 			else
-				logger.warn("can not lock file: '%s'", file.getAbsolutePath());
+				logger.warn("can not lock file: '{}'", file.getAbsolutePath());
 		}
 		catch(Exception e)
 		{
-			logger.error(String.format("Exception -> %s", e));
+			logger.error("Exception -> {}", e);
 		}
 		finally
 		{

@@ -66,7 +66,7 @@ public class DelFileRunner extends FileRunner
 	{
 		try
 		{
-			logger.info(String.format("removing '%s' ...", file.getAbsolutePath()));
+			logger.info("removing '{}'", file.getAbsolutePath());
 
 			if(deleteFile(file))
 				logger.info("OK !");
@@ -75,7 +75,7 @@ public class DelFileRunner extends FileRunner
 		}
 		catch(Exception e)
 		{
-			logger.error(String.format("Exception -> %s", e));
+			logger.error("Exception -> {}", e);
 		}
 	}
 }

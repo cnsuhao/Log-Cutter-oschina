@@ -111,7 +111,7 @@ public abstract class FileRunner implements Runnable
 				if(file.canWrite())
 					return doAccept(file);
 				else
-					logger.warn("'%s' can not be written", file.getAbsolutePath());
+					logger.warn("'{}' can not be written", file.getAbsolutePath());
 			}
 
 			return false;
@@ -137,9 +137,9 @@ public abstract class FileRunner implements Runnable
 		String path		= file.getAbsolutePath();
 		
 		if(result == true)
-			logger.info("    <Delete  OK > : %s", path);
+			logger.info("    <Delete  OK > : {}", path);
 		else
-			logger.warn("    <Delete FAIL> : %s", path);
+			logger.warn("    <Delete FAIL> : {}", path);
 		
 		return result;
 	}

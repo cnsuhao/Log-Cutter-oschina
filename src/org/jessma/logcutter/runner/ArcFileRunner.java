@@ -67,7 +67,7 @@ public class ArcFileRunner extends FileRunner
 	{
 		try
 		{
-			logger.info(String.format("archiving '%s' ...", file.getAbsolutePath()));
+			logger.info("archiving '{}'", file.getAbsolutePath());
 
 			String target = String.format(	"%s%s_%013d%s",
 											((ArcFilePath)fp).getArchivePath(),
@@ -89,7 +89,7 @@ public class ArcFileRunner extends FileRunner
 		}
 		catch(Exception e)
 		{
-			logger.error(String.format("Exception -> %s", e));
+			logger.error("Exception -> {}", e);
 		}
 	}
 }
